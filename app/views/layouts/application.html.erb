@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LombaApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <header>
+        <div class="logo">LOMBA</div>
+        <nav>
+            <ul>
+                <li>
+                <a href="/">HOME</a>
+                </li>
+                <li>
+                <a href="/article">ARTIKEL</a>
+                </li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <%= yield %>
+    <footer>Copyright@2022</footer>
+  </body>
+</html>

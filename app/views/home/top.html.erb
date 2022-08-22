@@ -1,0 +1,22 @@
+<main>
+        <aside>
+            <h3>JADWAL</h3>
+            <h4>Pendaftaran</h4>
+            <p>1 Agustus - 16 Agustus 2022</p>
+            <h4>Kegiatan Lomba</h4>
+            <p>15 Agustus - 17 Agustus 2022</p>
+            <h4>Pembagian Hadiah</h4>
+            <p>24 Agustus 2022</p>
+        </aside>
+        <div class="container">
+            <% @contests.each do |contest| %>
+            <div class="content-card">
+                <img src="assets/image/balap-karung.png" alt="">
+                <p><%= contest.title %></p>
+                <button>DAFTAR</button>
+            </div>
+            <% end %>
+
+        
+</main>
+
